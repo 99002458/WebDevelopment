@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sayHello() {
+            uname = document.getElementById("uname").value;
+            city = document.getElementById("city").value;
+            mytextrea = document.getElementById("mytextarea").value;
+
+            document.getElementById("mydiv").innerHTML = "great day " + uname;
+            document.getElementById("mydiv2").innerHTML = mytextrea;
+
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    Enter Name
+                </td>
+                <td>
+                    <input type="text" name="username" id="uname" /><br/> </td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter City
+                </td>
+                <td>
+                    <input type="text" name="city" id="city" /><br/> </td>
+                </td>
+            </tr>
+            <tr>
+
+                <td>
+                    <input type="button" value="submit" onclick="sayHello()" /><br/> </td>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id="mydiv" style="background-color: yellow;">
+
+    </div>
+    <p id="mypara">
+
+    </p>
+
+    <textarea id="mytextarea" rows="10" cols="10"></textarea><br/>
+    <div id="mydiv2" style="background-color: red;">
+
+    </div>
+</body>
+
+</html>

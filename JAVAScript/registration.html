@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var usernames = ["Ram", "Shyam", "Krishna", "Yadav", "shrikant"]
+        var entryun = prompt("Enter a username ", " ");
+        flag = true;
+
+        function register() {
+            var i;
+            for (i = 0; i < usernames.length; i++) {
+                if (entryun == usernames[i]) {
+                    flag = false;
+                    break;
+                }
+
+            }
+            if (flag) {
+                alert("Your Registration is Successful");
+                usernames.push(entryun);
+
+            } else {
+                alert("Try another username");
+
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Register" onclick="register()">
+</body>
+
+</html>

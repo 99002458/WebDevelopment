@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm() {
+            if (document.getElementById("uname").value == "") {
+                alert("enter your name");
+                document.myform.username.focus();
+            } else if (document.getElementById("passwordid").value == "") {
+                alert("enter your password");
+                document.myform.password.focus();
+            } else if (document.getElementById("gen1").checked == "" &&
+                document.getElementById("gen2").checked == "") {
+                alert("enter gender");
+                document.myform.gen1.checked = true;
+            } else {
+                alert("You are Registered");
+                document.myform.submit();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="HTML/formdemo.html" method="POST" name="myform">
+        <table>
+            <tr>
+                <td>
+                    Enter name</td>
+                <td>
+                    <input type="text" name="username" id="uname" /><br/> </td>
+            </tr>
+            <tr>
+                <td>Enter Age</td>
+                <td><input type="text" name="age" id="ageid" /><br/></td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td><input type="password" name="password" id="passwordid" /><br/></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male" id="gen1">Male </td>
+                <td>
+                    <input type="radio" name="gender" value="Female" id="gen2">Female</td>
+            </tr>
+            <br/>
+
+
+            <tr>
+                <td>
+                    <input type="button" value="Register" onclick="validateForm()" /></td>
+
+
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

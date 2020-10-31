@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function greet() {
+
+            var sum = parseInt(prompt("Enter first number", " ")) +
+                parseInt(prompt("Enter second number", " "));
+        }
+
+        function greet2() {
+            if (isNaN(sum)) {
+                document.write("This is not an number");
+
+
+            } else {
+
+                document.write("sum is ", sum);
+                prompt("Sum is ", sum);
+
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="show Message" onclick="greet()">
+    <input type="button" value="show result" onclick="greet2()">
+
+</body>
+
+
+</html>

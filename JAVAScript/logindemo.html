@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var usernames = ["Ram", "Shyam", "Krishna", "Yadav", "shrikant"]
+        var entryun = prompt("Enter a username ", " ");
+        flag = false;
+
+        function login() {
+            var i;
+            for (i = 0; i < usernames.length; i++) {
+
+                if (entryun == usernames[i]) {
+                    flag = true;
+                    break;
+                }
+            }
+            if (flag) {
+                alert("Logged In Successefully");
+
+            } else {
+                alert("Invalid Username");
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="LOGIN" onclick="login()">
+</body>
+
+</html>
